@@ -6,7 +6,7 @@ import Resultado from './components/Resultado'
 import Spinner from './components/Spinner'
 
 const Contenedor = styled.div`
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   @media (min-width: 992px) {
@@ -73,7 +73,7 @@ function App() {
         <Heading>Cotiza Criptomonedas al Instante</Heading>
         <Formulario 
           setMonedas={setMonedas}
-        />
+        />        
         { cargando && <Spinner/>}
         { cotizacion.PRICE && 
           <Resultado 
